@@ -1,6 +1,6 @@
 """Run the apparatus end-to-end on a stub agent.
 
-The registered study needs the live agent, the private governance kit, and the
+The registered study needs the live agent, the exact frozen intervention assembly, and the
 full task battery, none of which ship here. This driver substitutes a *stub
 agent* — for each run it deterministically leaves either the defective or the
 reference terminal tree from the demo fixture — and then runs the real machinery

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Agent Governance Lab mechanism and validity flow</title>
+  <desc id="desc">The same candidate change passes through four governance arms. L0 has no governance, L1 has written rules, SHAM observes without blocking, and L3 enforces. All run records then pass through an integrity seam and validity gate; if either breaks, no confirmatory result is produced.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111827"/><stop offset="1" stop-color="#07111f"/></linearGradient>
+    <filter id="shadow"><feDropShadow dy="12" stdDeviation="14" flood-color="#020617" flood-opacity=".45"/></filter>
+    <style>
+      .sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace}.eyebrow{fill:#a5b4fc;font-size:13px;letter-spacing:.11em}.title{fill:#f8fafc;font-size:30px;font-weight:680}.body{fill:#cbd5e1;font-size:15px}.small{fill:#94a3b8;font-size:12px}.card{fill:#111c2d;stroke:#2a3950}.arm{fill:#0d1727;stroke:#2b3b53}.armtitle{fill:#f8fafc;font-size:18px;font-weight:700}.pill{fill:#17243a}.pass{fill:#34d399}.warn{fill:#fbbf24}.stop{fill:#fb7185}.line{stroke:#475569;stroke-width:2}
+    </style>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#64748b"/></marker>
+  </defs>
+  <rect width="1200" height="700" rx="24" fill="url(#bg)"/>
+  <g class="sans">
+    <text x="64" y="58" class="eyebrow">MECHANISM → TREATMENT → VALIDITY → CLAIM</text>
+    <text x="64" y="98" class="title">Being watched is not the same as being stopped.</text>
+    <text x="64" y="128" class="body">The lab measures enforcement—and refuses a flattering result when the apparatus has not earned one.</text>
+
+    <rect x="64" y="172" width="1072" height="76" rx="14" class="card"/>
+    <text x="88" y="202" class="small">IDENTICAL CANDIDATE CHANGE</text>
+    <text x="88" y="229" class="mono" fill="#e2e8f0" font-size="16">suite green · test count regressed · no demonstrated-red · oracle changed · verdict stale</text>
+
+    <g filter="url(#shadow)">
+      <g transform="translate(64 286)"><rect width="244" height="176" rx="16" class="arm"/><text x="22" y="35" class="armtitle">L0 · baseline</text><text x="22" y="68" class="body">No governance surface.</text><rect x="22" y="101" width="95" height="34" rx="17" class="pill"/><circle cx="42" cy="118" r="5" class="pass"/><text x="56" y="123" class="small">released</text><text x="22" y="155" class="small">controls baseline behavior</text></g>
+      <g transform="translate(340 286)"><rect width="244" height="176" rx="16" class="arm"/><text x="22" y="35" class="armtitle">L1 · instructions</text><text x="22" y="68" class="body">Written rules, no judge.</text><rect x="22" y="101" width="95" height="34" rx="17" class="pill"/><circle cx="42" cy="118" r="5" class="pass"/><text x="56" y="123" class="small">released</text><text x="22" y="155" class="small">tests instruction alone</text></g>
+      <g transform="translate(616 286)"><rect width="244" height="176" rx="16" class="arm"/><text x="22" y="35" class="armtitle">SHAM · observed</text><text x="22" y="68" class="body">Gate sees six failures.</text><rect x="22" y="101" width="150" height="34" rx="17" class="pill"/><circle cx="42" cy="118" r="5" class="warn"/><text x="56" y="123" class="small">would block · releases</text><text x="22" y="155" class="small">isolates Hawthorne effect</text></g>
+      <g transform="translate(892 286)"><rect width="244" height="176" rx="16" class="arm"/><text x="22" y="35" class="armtitle">L3 · enforced</text><text x="22" y="68" class="body">Same gate, real authority.</text><rect x="22" y="101" width="105" height="34" rx="17" class="pill"/><circle cx="42" cy="118" r="5" class="stop"/><text x="56" y="123" class="small">refused</text><text x="22" y="155" class="small">tests enforcement itself</text></g>
+    </g>
+
+    <path d="M186 478V512H420" class="line" fill="none"/><path d="M462 478V512" class="line"/><path d="M738 478V512H778" class="line" fill="none"/><path d="M1014 478V512H778" class="line" fill="none"/>
+    <rect x="394" y="512" width="388" height="68" rx="13" class="card"/>
+    <text x="416" y="540" class="small">SIGNED RECORD → BLIND GRADE → VALIDITY VERDICT</text>
+    <text x="416" y="563" class="body">Integrity mismatch? Stop before grading.</text>
+    <path d="M782 546H830" class="line" marker-end="url(#arrow)"/>
+    <rect x="842" y="512" width="294" height="68" rx="13" fill="#291725" stroke="#713248"/>
+    <text x="864" y="540" class="small" fill="#fda4af">BROKEN VALIDITY SEAM</text>
+    <text x="864" y="563" class="body">NO CONFIRMATORY RESULT</text>
+
+    <path d="M64 624H1136" stroke="#28364b"/>
+    <text x="64" y="651" class="small">Public smoke: typed treatment semantics + real integrity and confirmatory refusals · Extended CI: pinned 3xit2 adversarial mechanism suite</text>
+    <text x="64" y="674" class="small">Historical Stage 1 stopped before a verdict. Synthetic demo numbers illustrate wiring only.</text>
+  </g>
+</svg>
