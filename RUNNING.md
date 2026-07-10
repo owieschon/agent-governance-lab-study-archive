@@ -7,10 +7,22 @@ it.)
 Everything below runs with no secrets and no network, writing only to a workspace directory
 you name.
 
+## Reviewer smoke (under 90 seconds)
+
+```bash
+pip install -e .
+trustladder-smoke --workspace /tmp/governance-smoke
+```
+
+This is the front-door path: it executes the L0/L1/SHAM/L3 treatment semantics, binds a
+verdict to actual candidate-tree bytes, demonstrates a stale/tampered proof, reproduces the
+D3 runner/grader hash refusal, and proves confirmatory analysis will not run without a
+`VALID` verdict. It writes `smoke_receipt.json` and produces no effect estimate.
+
 ## The whole chain end-to-end (one command)
 
-The live study needs a real agent, a private governance kit, and the full task battery, none
-of which ship here. `trustladder-mini-run` substitutes a stub agent (for each run it leaves
+The live study needs a real agent, the exact frozen intervention assembly, and the full task
+battery, none of which ship here. `trustladder-mini-run` substitutes a stub agent (for each run it leaves
 either the defective or the reference terminal tree from the demo fixture) and then runs the
 real machinery over those runs:
 
@@ -69,7 +81,7 @@ trustladder-analyze ap7-check   --workspace "$WS"
 Step 3 prints the headline line, e.g.:
 
 ```
-[H1] [SYNTHETIC DEMO DATA — NOT A RESULT] effect=64.7pp  CI95%(BCa)=[35.3, 82.4]pp  floor=20pp (T-D1)
+[H1] [SYNTHETIC DEMO DATA — NOT A RESULT] effect=64.7pp  CI95%(BCa)=[35.3, 82.4]pp  floor=20pp (registered)
 [H1] [SYNTHETIC DEMO DATA — NOT A RESULT] outcome=CONFIRMED  m0_noninferior=True  h1_confirmed=True
 ```
 
@@ -133,7 +145,7 @@ pytest tests/test_grading_seam.py -q
 | Step | Needs | Why it's not in this repo |
 |------|-------|---------------------------|
 | Live agent dispatch (`runner/`) | the `claude` CLI + an account | costs money; not the point of the demo |
-| L3 / SHAM arm assembly (`arms/`) | a private governance kit | it's a separate, unpublished project |
+| Exact historical L3 / SHAM arm assembly (`arms/`) | frozen intervention provenance | the current public 3xit2 reconstruction is pinned and tested, but is not misrepresented as byte-identical to the historical treatment |
 | Grading on the *real* battery | the withheld task answer keys | publishing them would spoil the benchmark |
 
 `ledger/` and `packets/` are included so you can read the full measurement design, but

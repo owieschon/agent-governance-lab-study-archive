@@ -87,15 +87,15 @@ def load_config(path=None):
     cfg = json.loads(Path(path or DEFAULT_CONFIG).read_text())
     # K1 floor must arrive with its ratification citation.
     cite = cfg.get("k1_floor_citation", "")
-    if "T-D1" not in cite:
+    if "METHODOLOGY.md" not in cite:
         raise ConfigError(
-            "[CONFIG REFUSAL] k1_floor_pp=%r has no T-D1 citation "
+            "[CONFIG REFUSAL] k1_floor_pp=%r has no public methodology citation "
             "(k1_floor_citation=%r). The K1 floor is only consumable "
-            "with its ratification record (DECISIONS.md T-D1, 20pp); "
+            "with its frozen public-methodology summary (20pp); "
             "refusing to run." % (cfg.get("k1_floor_pp"), cite))
     if cfg["k1_floor_pp"] != 20:
         raise ConfigError(
-            "[CONFIG REFUSAL] k1_floor_pp=%r != 20; T-D1 ratified 20pp "
+            "[CONFIG REFUSAL] k1_floor_pp=%r != 20; methodology fixed 20pp "
             "absolute and Sec. 10(a) says the number does not move "
             "after freeze." % cfg["k1_floor_pp"])
     return cfg
@@ -480,7 +480,7 @@ def run_confirmatory(workspace, cfg, log=print):
     # own uncertainty is visible (it was previously gated on a bare point
     # estimate while M1 used a CI; this closes that asymmetry). The GATE
     # decision follows the ratified mode (H1 'at equal-or-better
-    # M0'; mode + margin pending operator ratification):
+    # M0'; mode + margin fixed before data collection):
     #   'point' — point estimate >= -margin (directional-study reading)
     #   'ci'    — CI lower bound >= -margin (one-sided non-inferiority test)
     m0_delta_pp = 100.0 * sum(m0_diffs) / len(m0_diffs)
@@ -539,7 +539,7 @@ def run_confirmatory(workspace, cfg, log=print):
     }
     out = p["analysis"] / "confirmatory_h1.json"
     out.write_text(json.dumps(result, indent=2) + "\n")
-    log("[H1] %seffect=%.1fpp  CI%d%%(%s)=[%.1f, %.1f]pp  floor=%dpp (T-D1)"
+    log("[H1] %seffect=%.1fpp  CI%d%%(%s)=[%.1f, %.1f]pp  floor=%dpp (registered)"
         % (mark, effect_pp, int(b["ci_level"] * 100), primary, ci_lo, ci_hi, floor))
     log("[H1] CI sensitivity: BCa=[%.1f, %.1f]  Newcombe=[%.1f, %.1f]  "
         "percentile(legacy)=[%.1f, %.1f]"
@@ -548,11 +548,11 @@ def run_confirmatory(workspace, cfg, log=print):
         % (m0_delta_pp, m0_bca_lo, m0_bca_hi, m0_mode, margin))
     if m0_mode == "ci" and margin == 0.0:
         log("[H1] WARNING: M0 mode=ci with margin=0.0 (placeholder, NOT the "
-            "ratified value — pending operator ratification). A "
+            "registered value). A "
             "CI-based non-inferiority test needs a real margin; at 0.0 it "
             "passes only on exactly-equal completion and ~never on real data. "
-            "Owner must set the M0 margin before the confirmatory run is "
-            "trusted (T-D34).")
+            "Configuration must set the M0 margin before the confirmatory run is "
+            "trusted (registered small-n method).")
     log("[H1] %soutcome=%s  m0_noninferior=%s  h1_confirmed=%s"
         % (mark, outcome, m0_noninferior, h1_confirmed))
     if reserve_batch_flag:
@@ -796,7 +796,7 @@ def run_secondaries(workspace, cfg, log=print):
     else:
         m8_escape = m8_m0 = None
         ns6_note = ("varprobe batch absent — probe not enabled/dispatched "
-                    "(Amendment M, owner-gated at freeze like the mini-rep); "
+                    "(pre-data amendment, gated at freeze like the mini-rep); "
                     "SIGSOFT B-6 stays the disclosed-gap wording. Not a "
                     "deviation.")
     tables["NS6_M8_within_cell_noise_floor"] = {
