@@ -11,8 +11,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "trustladder"
-version = "0.1.0"
-description = "Evaluation harness for a preregistered study on whether enforced governance reduces an AI coding agent's safety escapes."
+version = "0.2.0"
+description = "Agent Governance Lab: an executable enforcement treatment and preregistered measurement pipeline that refuses invalid conclusions."
 requires-python = ">=3.10"          # uses structural pattern matching (match/case)
 dependencies = []                    # standard library only
 license = "Apache-2.0"
@@ -26,6 +26,7 @@ dev = ["pytest>=7", "ruff>=0.4"]
 trustladder-analyze = "trustladder.analysis.analysis:main"
 trustladder-report = "trustladder.analysis.sql_report:main"
 trustladder-mini-run = "trustladder.demo.mini_pipeline:main"
+trustladder-smoke = "trustladder.demo.lab_smoke:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
