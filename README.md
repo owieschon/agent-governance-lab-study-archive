@@ -48,7 +48,7 @@ instead of prompt-defined.
 
 The full enforcement product remains [`3xit2_demo`](https://github.com/owieschon/3xit2_demo).
 Rather than vendor and drift it, scheduled extended CI checks out pinned commit
-`9dcc4056e5c60fd8794fe86be7c916dd16de5bf3` and runs its complete adversarial suite.
+`218d2dab8ebfa9c6e7a19f065e4a104b94d272d3` and runs its complete adversarial suite.
 That exact commit was also re-run locally on 2026-07-10 in non-stamping CI mode: all 50
 registered cases passed, including vacuous proof, stale green, oracle tampering, manifest
 freeze, diff grounding, and untracked-content freshness.

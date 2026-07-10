@@ -6,7 +6,7 @@ task data or agent transcripts.
 ## Public enforcement source
 
 - Repository: `owieschon/3xit2_demo`
-- Pinned source commit: `9dcc4056e5c60fd8794fe86be7c916dd16de5bf3`
+- Pinned source commit: `218d2dab8ebfa9c6e7a19f065e4a104b94d272d3`
 - Relevant surfaces: `rails/verifier/verify.sh`, the protected manifest/oracle/freshness
   checks, and `rails/adversarial/run_eval.sh` with its planted violation cases.
 
