@@ -1,8 +1,12 @@
 # SCHEMA DOCS — Run Record + Verdict Telemetry (Deliverable 8 CORE)
 
-Authority: PREREGISTRATION_v3_trustladder.md Sec. 7A (Amendments D, F,
-v3.1) > DISPATCH deliverable 8 > harness/ARCHITECTURE.md Sec. 2
-(field names frozen there). Schema slimming is a loosening (prereg 7A).
+<!-- clean-docs:purpose -->
+Authority: PREREGISTRATION_v3_trustladder.md Sec. 7A (Amendments D, F, v3.1) > DISPATCH deliverable 8 > harness/ARCHITECTURE.md Sec. 2 (field names frozen there). Schema slimming is a loosening (prereg 7A). Read this page before changing or relying on SCHEMA DOCS — Run Record + Verdict Telemetry (Deliverable 8 CORE) so you can preserve its documented constraints and verify the result against the repository.
+<!-- clean-docs:end purpose -->
+<!-- clean-docs:allow audience reason="This page documents agent behavior as its subject; it addresses maintainers and evaluators rather than handing work to a future agent" -->
+<!-- clean-docs:allow section-length reason="This section keeps one tightly coupled procedure or contract together so readers can verify it without crossing section boundaries" -->
+<!-- clean-docs:allow doc-length reason="This canonical contract stays in one file so its definitions, constraints, and verification criteria remain reviewable together" -->
+
 
 Files in this directory:
 
@@ -54,6 +58,7 @@ Stated plainly, of record:
   is a proven gate's claim with no after-the-fact tamper evidence.
 
 ### Scope of the signature: the agent's AS-DISPATCHED claim (Option B, A5 / T-D24)
+<!-- clean-docs:allow section-length reason="This section keeps one tightly coupled procedure or contract together so readers can verify it without crossing section boundaries" -->
 
 The signature covers, and attests, **the agent's as-dispatched record**:
 the identity fields, `claim`, `evidence_refs`, `gate_decisions`,
@@ -89,7 +94,7 @@ two trust domains and costs two signatures to explain."* This is the
 **Option B** resolution of freeze blocker A5 (raised T-D21, resolved
 T-D24); it extends — and does not contradict — the Amendment F / prereg
 7A rationale-of-record above (the signature is after-the-fact integrity;
-`policy_proof_ref` is before-the-fact proof). A5/Option B simply scopes
+`policy_proof_ref` is before-the-fact proof). A5/Option B directly scopes
 *which* fields the after-the-fact integrity covers: the agent's
 as-dispatched claim, not the grader's verdict.
 
@@ -110,6 +115,7 @@ the agent-writable surface at `~/.trustladder/keys/`.
 ---
 
 ## Signed-receipt implementation (schema/signing/, of record)
+<!-- clean-docs:allow section-length reason="This section keeps one tightly coupled procedure or contract together so readers can verify it without crossing section boundaries" -->
 
 **Key location + rationale.** The Ed25519 signing key is generated at
 install by `signing/keygen.py` into `~/.trustladder/keys/` (dir 0700;

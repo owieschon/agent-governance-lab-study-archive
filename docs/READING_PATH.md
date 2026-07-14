@@ -1,7 +1,9 @@
 # Representative reading path
 
-Read these four files in order. They span the mechanism, experimental treatment, validity
-fence, and decisive negative case.
+<!-- clean-docs:purpose -->
+Read these four files in order. They span the mechanism, experimental treatment, validity fence, and decisive negative case. Read this page before changing or relying on Representative reading path so you can preserve its documented constraints and verify the result against the repository.
+<!-- clean-docs:end purpose -->
+
 
 1. **`src/trustladder/governance/gate.py`** — one typed treatment function. SHAM and L3
    inspect identical evidence; only L3 has authority to refuse release.
