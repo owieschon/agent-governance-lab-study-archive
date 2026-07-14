@@ -1,8 +1,10 @@
-# Agent Governance Lab
+# Agent Governance Lab — archived study
 
 <!-- clean-docs:purpose -->
 **Does a real enforcement gate make an AI coding agent safer than written rules—or does merely looking governed change behavior?**
 <!-- clean-docs:end purpose -->
+
+> Archived and superseded by [Agent Governance Lab](https://github.com/owieschon/agent-governance-lab). Preserved because the invalidated Stage 1 result and refusal evidence remain useful.
 <!-- clean-docs:allow doc-length reason="The Agent Governance Lab reader path stays in one file because splitting it would separate its operating context from its verification material" -->
 
 
@@ -49,7 +51,7 @@ In the public smoke, SHAM and L3 receive byte-for-byte equivalent evidence and p
 same failure list. Only `released` differs. That makes the treatment contrast inspectable
 instead of prompt-defined.
 
-The full enforcement product remains [`3xit2_demo`](https://github.com/owieschon/3xit2_demo).
+The maintained enforcement product is [Agent Governance Lab](https://github.com/owieschon/agent-governance-lab).
 Rather than vendor and drift it, scheduled extended CI checks out pinned commit
 `218d2dab8ebfa9c6e7a19f065e4a104b94d272d3` and runs its complete adversarial suite.
 That exact commit was also re-run locally on 2026-07-10 in non-stamping CI mode: all 50
