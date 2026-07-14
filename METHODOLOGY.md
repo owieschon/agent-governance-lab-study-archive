@@ -1,8 +1,9 @@
 # Methodology
 
-A condensed, plain-language version of the study design. The full preregistration, decision
-log, and freeze record were written before data collection and preserved privately (see
-[`dev-history/`](dev-history/)); those are authoritative, this file summarises them.
+<!-- clean-docs:purpose -->
+A condensed, plain-language version of the study design. The full preregistration, decision log, and freeze record were written before data collection and preserved privately (see [`dev-history/`](dev-history/)); those are authoritative, this file summarises them. Read this page before changing or relying on Methodology so you can preserve its documented constraints and verify the result against the repository.
+<!-- clean-docs:end purpose -->
+
 
 ## The question, fixed before any data
 

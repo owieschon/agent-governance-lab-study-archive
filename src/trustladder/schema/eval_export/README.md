@@ -1,7 +1,9 @@
 # Inspect-compatible .eval export — TrustLadder Stage 1 (Amendment J)
 
-Authority: PREREGISTRATION_v3_trustladder.md Sec. 5 "TOOLING INTEROP"
-(Amendment J, adopted) + DISPATCH deliverable 8 + ARCHITECTURE.md Secs. 1–2.
+<!-- clean-docs:purpose -->
+Authority: PREREGISTRATION_v3_trustladder.md Sec. 5 "TOOLING INTEROP" (Amendment J, adopted) + DISPATCH deliverable 8 + ARCHITECTURE.md Secs. 1–2. Read this page before changing or relying on Inspect-compatible .eval export — TrustLadder Stage 1 (Amendment J) so you can preserve its documented constraints and verify the result against the repository.
+<!-- clean-docs:end purpose -->
+
 
 ## Standing rules (BINDING)
 - The native JSON run record (`records/<run_id>.json`) is CANONICAL. The

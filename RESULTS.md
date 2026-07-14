@@ -1,7 +1,9 @@
 # Results
 
-Stage 1 of the study produced no confirmatory result. Why it didn't is the substance of
-this page.
+<!-- clean-docs:purpose -->
+Stage 1 of the study produced no confirmatory result. Why it didn't is the substance of this page. Read this page before changing or relying on Results so you can preserve its documented constraints and verify the result against the repository.
+<!-- clean-docs:end purpose -->
+
 
 ## What was collected
 

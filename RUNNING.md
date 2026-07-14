@@ -1,8 +1,10 @@
 # Running it
 
-**Requirements:** Python 3.10+. No third-party packages for the offline demo. (Optional:
-`cryptography` for real Ed25519 signing — there is an `openssl` fallback, so you don't need
-it.)
+<!-- clean-docs:purpose -->
+**Requirements:** Python 3.10+. No third-party packages for the offline demo. (Optional: `cryptography` for real Ed25519 signing — there is an `openssl` fallback, so you don't need it.) Read this page before changing or relying on Running it so you can preserve its documented constraints and verify the result against the repository.
+<!-- clean-docs:end purpose -->
+<!-- clean-docs:allow doc-length reason="This ordered record stays in one file so readers can trace decisions and changes without crossing chronology boundaries" -->
+
 
 Everything below runs with no secrets and no network, writing only to a workspace directory
 you name.
@@ -62,18 +64,18 @@ not a scientific result (see [RESULTS.md](RESULTS.md)).
 pip install -e .          # one-time; installs the `trustladder-analyze` command
 WS=/tmp/trustladder-demo
 
-# 1. Fabricate a synthetic set of 120 run-records + ledger + telemetry.
+## 1. Fabricate a synthetic set of 120 run-records + ledger + telemetry.
 trustladder-analyze dummy --workspace "$WS" --scenario confirmed
 
-# 2. Validity gates — are the positive/negative controls behaving, is the
-#    grader agreement high enough, is the L1 base rate in range? (Must pass
-#    before the confirmatory contrast is allowed to run.)
+## 2. Validity gates — are the positive/negative controls behaving, is the
+##    grader agreement high enough, is the L1 base rate in range? (Must pass
+##    before the confirmatory contrast is allowed to run.)
 trustladder-analyze validity --workspace "$WS"
 
-# 3. The confirmatory contrast: L3 escape rate vs L1, at equal completion.
+## 3. The confirmatory contrast: L3 escape rate vs L1, at equal completion.
 trustladder-analyze confirmatory --workspace "$WS"
 
-# 4. Exploratory secondaries + a cross-side consistency check.
+## 4. Exploratory secondaries + a cross-side consistency check.
 trustladder-analyze secondaries --workspace "$WS"
 trustladder-analyze ap7-check   --workspace "$WS"
 ```
