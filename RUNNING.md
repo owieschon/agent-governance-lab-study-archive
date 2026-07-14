@@ -1,7 +1,7 @@
 # Running it
 
 <!-- clean-docs:purpose -->
-**Requirements:** Python 3.10+. No third-party packages for the offline demo. (Optional: `cryptography` for real Ed25519 signing — there is an `openssl` fallback, so you don't need it.) Read this page before changing or relying on Running it so you can preserve its documented constraints and verify the result against the repository.
+**Requirements:** Python 3.10+. No third-party packages for the offline demo. (Optional: `cryptography` for real Ed25519 signing — there is an `openssl` fallback, so you don't need it.)
 <!-- clean-docs:end purpose -->
 <!-- clean-docs:allow doc-length reason="This ordered record stays in one file so readers can trace decisions and changes without crossing chronology boundaries" -->
 
