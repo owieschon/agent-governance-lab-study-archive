@@ -16,6 +16,6 @@ Read these four files in order. They span the mechanism, experimental treatment,
    including calibration and signature preservation. This is the seam that the study had
    failed to exercise before freezing.
 
-The actual enforcement product remains the separate public `3xit2_demo` repository. This
+The maintained enforcement product is the separate public `agent-governance-lab` repository. This
 repo's scheduled extended workflow checks out a pinned commit and runs its full adversarial
 suite rather than copying or silently drifting the mechanism.

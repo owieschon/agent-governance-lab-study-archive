@@ -7,7 +7,7 @@ This portfolio piece recomposes two author-owned public sources without importin
 
 ## Public enforcement source
 
-- Repository: `owieschon/3xit2_demo`
+- Repository: `owieschon/agent-governance-lab`
 - Pinned source commit: `218d2dab8ebfa9c6e7a19f065e4a104b94d272d3`
 - Relevant surfaces: `rails/verifier/verify.sh`, the protected manifest/oracle/freshness
   checks, and `rails/adversarial/run_eval.sh` with its planted violation cases.
