@@ -1,7 +1,7 @@
 # grading/ — two-stage grading harness (deliverable 9)
 
 <!-- clean-docs:purpose -->
-Authority: PREREGISTRATION_v3_trustladder.md Sec. 6 (G1–G5, training-recall detection), Sec. 7 (M1 threshold), Sec. 9 (AP7) · ARCHITECTURE.md Secs. 5–6. Python 3, stdlib only, deterministic, no network. Demonstrated-red receipts: `harness/receipts/grading_red_0*.txt`. Read this page before changing or relying on grading/ — two-stage grading harness (deliverable 9) so you can preserve its documented constraints and verify the result against the repository.
+Authority: PREREGISTRATION_v3_trustladder.md Sec. 6 (G1–G5, training-recall detection), Sec. 7 (M1 threshold), Sec. 9 (AP7) · ARCHITECTURE.md Secs. 5–6. Python 3, stdlib only, deterministic, no network. Demonstrated-red receipts: `harness/receipts/grading_red_0*.txt`.
 <!-- clean-docs:end purpose -->
 
 

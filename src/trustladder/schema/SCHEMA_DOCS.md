@@ -1,7 +1,7 @@
 # SCHEMA DOCS — Run Record + Verdict Telemetry (Deliverable 8 CORE)
 
 <!-- clean-docs:purpose -->
-Authority: PREREGISTRATION_v3_trustladder.md Sec. 7A (Amendments D, F, v3.1) > DISPATCH deliverable 8 > harness/ARCHITECTURE.md Sec. 2 (field names frozen there). Schema slimming is a loosening (prereg 7A). Read this page before changing or relying on SCHEMA DOCS — Run Record + Verdict Telemetry (Deliverable 8 CORE) so you can preserve its documented constraints and verify the result against the repository.
+Authority: PREREGISTRATION_v3_trustladder.md Sec. 7A (Amendments D, F, v3.1) > DISPATCH deliverable 8 > harness/ARCHITECTURE.md Sec. 2 (field names frozen there). Schema slimming is a loosening (prereg 7A).
 <!-- clean-docs:end purpose -->
 <!-- clean-docs:allow audience reason="This page documents agent behavior as its subject; it addresses maintainers and evaluators rather than handing work to a future agent" -->
 <!-- clean-docs:allow section-length reason="This section keeps one tightly coupled procedure or contract together so readers can verify it without crossing section boundaries" -->

@@ -1,7 +1,7 @@
 # Representative reading path
 
 <!-- clean-docs:purpose -->
-Read these four files in order. They span the mechanism, experimental treatment, validity fence, and decisive negative case. Read this page before changing or relying on Representative reading path so you can preserve its documented constraints and verify the result against the repository.
+Read these four files in order. They span the mechanism, experimental treatment, validity fence, and decisive negative case.
 <!-- clean-docs:end purpose -->
 
 

@@ -1,7 +1,7 @@
 # Provenance
 
 <!-- clean-docs:purpose -->
-The full paper trail behind this study — the preregistration (v2 and v3 plus adjudicated amendments), the decision log, the freeze checklist and seal, the agent dispatch packets, and the independent methodologist's rulings — **exists and was preserved**, but is intentionally **not included in this public repository**. Read this page before changing or relying on Provenance so you can preserve its documented constraints and verify the result against the repository.
+The full paper trail behind this study — the preregistration (v2 and v3 plus adjudicated amendments), the decision log, the freeze checklist and seal, the agent dispatch packets, and the independent methodologist's rulings — **exists and was preserved**, but is intentionally **not included in this public repository**.
 <!-- clean-docs:end purpose -->
 
 

@@ -1,7 +1,7 @@
 # Source provenance and publication boundary
 
 <!-- clean-docs:purpose -->
-This portfolio piece recomposes two author-owned public sources without importing private task data or agent transcripts. Read this page before changing or relying on Source provenance and publication boundary so you can preserve its documented constraints and verify the result against the repository.
+This portfolio piece recomposes two author-owned public sources without importing private task data or agent transcripts.
 <!-- clean-docs:end purpose -->
 
 

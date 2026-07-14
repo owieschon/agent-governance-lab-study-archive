@@ -1,7 +1,7 @@
 # Glossary
 
 <!-- clean-docs:purpose -->
-Plain definitions for the terms used across this repo. (The original study used more shorthand; this is the outsider-facing version.) Read this page before changing or relying on Glossary so you can preserve its documented constraints and verify the result against the repository.
+Plain definitions for the terms used across this repo. (The original study used more shorthand; this is the outsider-facing version.)
 <!-- clean-docs:end purpose -->
 
 

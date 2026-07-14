@@ -1,7 +1,7 @@
 # Agent Governance Lab
 
 <!-- clean-docs:purpose -->
-**Does a real enforcement gate make an AI coding agent safer than written rules—or does merely looking governed change behavior?** Read this page before changing or relying on Agent Governance Lab so you can preserve its documented constraints and verify the result against the repository.
+**Does a real enforcement gate make an AI coding agent safer than written rules—or does merely looking governed change behavior?**
 <!-- clean-docs:end purpose -->
 <!-- clean-docs:allow doc-length reason="The Agent Governance Lab reader path stays in one file because splitting it would separate its operating context from its verification material" -->
 
