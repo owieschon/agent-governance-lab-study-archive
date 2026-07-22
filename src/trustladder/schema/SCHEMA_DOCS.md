@@ -1,11 +1,11 @@
 # SCHEMA DOCS — Run Record + Verdict Telemetry (Deliverable 8 CORE)
 
-<!-- clean-docs:purpose -->
+<!-- sourcebound:purpose -->
 Authority: PREREGISTRATION_v3_trustladder.md Sec. 7A (Amendments D, F, v3.1) > DISPATCH deliverable 8 > harness/ARCHITECTURE.md Sec. 2 (field names frozen there). Schema slimming is a loosening (prereg 7A).
-<!-- clean-docs:end purpose -->
-<!-- clean-docs:allow audience reason="This page documents agent behavior as its subject; it addresses maintainers and evaluators rather than handing work to a future agent" -->
-<!-- clean-docs:allow section-length reason="This section keeps one tightly coupled procedure or contract together so readers can verify it without crossing section boundaries" -->
-<!-- clean-docs:allow doc-length reason="This canonical contract stays in one file so its definitions, constraints, and verification criteria remain reviewable together" -->
+<!-- sourcebound:end purpose -->
+<!-- sourcebound:allow audience reason="This page documents agent behavior as its subject; it addresses maintainers and evaluators rather than handing work to a future agent" -->
+<!-- sourcebound:allow section-length reason="The schema index keeps each record artifact beside the command that validates or emits it" -->
+<!-- sourcebound:allow doc-length reason="This canonical contract stays in one file so its definitions, constraints, and verification criteria remain reviewable together" -->
 
 
 Files in this directory:
@@ -58,7 +58,7 @@ Stated plainly, of record:
   is a proven gate's claim with no after-the-fact tamper evidence.
 
 ### Scope of the signature: the agent's AS-DISPATCHED claim (Option B, A5 / T-D24)
-<!-- clean-docs:allow section-length reason="This section keeps one tightly coupled procedure or contract together so readers can verify it without crossing section boundaries" -->
+<!-- sourcebound:allow section-length reason="The signature-scope reference keeps included fields beside the excluded grader fields and their separate trust boundary" -->
 
 The signature covers, and attests, **the agent's as-dispatched record**:
 the identity fields, `claim`, `evidence_refs`, `gate_decisions`,
@@ -115,7 +115,7 @@ the agent-writable surface at `~/.trustladder/keys/`.
 ---
 
 ## Signed-receipt implementation (schema/signing/, of record)
-<!-- clean-docs:allow section-length reason="This section keeps one tightly coupled procedure or contract together so readers can verify it without crossing section boundaries" -->
+<!-- sourcebound:allow section-length reason="The signing reference keeps key custody, canonicalization, and backend receipts in one reviewable contract" -->
 
 **Key location + rationale.** The Ed25519 signing key is generated at
 install by `signing/keygen.py` into `~/.trustladder/keys/` (dir 0700;

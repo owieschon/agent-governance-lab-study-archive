@@ -1,8 +1,8 @@
 # Results
 
-<!-- clean-docs:purpose -->
+<!-- sourcebound:purpose -->
 Stage 1 of the study produced no confirmatory result. Why it didn't is the substance of this page.
-<!-- clean-docs:end purpose -->
+<!-- sourcebound:end purpose -->
 
 
 ## What was collected

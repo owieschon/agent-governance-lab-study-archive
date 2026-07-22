@@ -1,8 +1,8 @@
 # Provenance
 
-<!-- clean-docs:purpose -->
+<!-- sourcebound:purpose -->
 The full paper trail behind this study — the preregistration (v2 and v3 plus adjudicated amendments), the decision log, the freeze checklist and seal, the agent dispatch packets, and the independent methodologist's rulings — **exists and was preserved**, but is intentionally **not included in this public repository**.
-<!-- clean-docs:end purpose -->
+<!-- sourcebound:end purpose -->
 
 
 Two reasons:

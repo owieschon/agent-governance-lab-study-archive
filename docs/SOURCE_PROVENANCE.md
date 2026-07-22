@@ -1,8 +1,9 @@
 # Source provenance and publication boundary
 
-<!-- clean-docs:purpose -->
-This portfolio piece recomposes two author-owned public sources without importing private task data or agent transcripts.
-<!-- clean-docs:end purpose -->
+<!-- sourcebound:purpose -->
+This page identifies the public enforcement and measurement sources recomposed by the
+archive, then marks the private study material that is not available for reproduction.
+<!-- sourcebound:end purpose -->
 
 
 ## Public enforcement source
@@ -14,8 +15,9 @@ This portfolio piece recomposes two author-owned public sources without importin
 
 `src/trustladder/governance/gate.py` models only the treatment semantics the experiment
 needs: written rules, a visible nonblocking gate, and the same gate with release authority.
-It is not presented as a copy or replacement for the full verifier. Scheduled extended CI
-runs the actual public mechanism at the pinned commit.
+It is not presented as a copy or replacement for the full verifier. When this repository is
+unarchived, extended CI can run the actual public mechanism at the pinned commit. GitHub
+disables that workflow while the repository is archived.
 
 ## Public measurement source
 

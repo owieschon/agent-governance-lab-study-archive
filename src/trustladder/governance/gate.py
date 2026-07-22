@@ -1,13 +1,13 @@
-"""A compact, typed model of the 3xit2 enforcement treatment.
+"""A compact, typed model of the Agent Governance Lab enforcement treatment.
 
-This is not a second implementation of the full 3xit2 verifier. It freezes the
+This is not a second implementation of the full verifier. It freezes the
 experimentally relevant semantics in one inspectable function: L1 has written
 rules only, SHAM computes the same verdict but cannot block, and L3 computes the
 verdict and refuses release when a proof obligation fails.
 
-The extended CI runs the actual pinned 3xit2 adversarial suite. This module
-exists so the treatment distinction is executable inside the measurement repo
-without vendoring a separate product or requiring Claude Code.
+When this repository is unarchived, extended CI can run the actual pinned Agent Governance Lab
+adversarial suite. This module keeps the treatment distinction executable without
+vendoring a separate product or requiring an agent runtime.
 """
 from __future__ import annotations
 
