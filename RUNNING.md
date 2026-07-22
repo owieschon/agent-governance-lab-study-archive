@@ -1,13 +1,16 @@
 # Running it
 
-<!-- clean-docs:purpose -->
-**Requirements:** Python 3.10+. No third-party packages for the offline demo. (Optional: `cryptography` for real Ed25519 signing — there is an `openssl` fallback, so you don't need it.)
-<!-- clean-docs:end purpose -->
-<!-- clean-docs:allow doc-length reason="This ordered record stays in one file so readers can trace decisions and changes without crossing chronology boundaries" -->
+<!-- sourcebound:purpose -->
+Run the archive's synthetic treatment, refusal, signing, grading, and analysis paths without
+private study inputs. These procedures verify the shipped machinery; they do not reproduce
+the historical experiment or produce an empirical result.
+<!-- sourcebound:end purpose -->
+<!-- sourcebound:allow doc-length reason="This ordered record stays in one file so readers can trace decisions and changes without crossing chronology boundaries" -->
 
 
-Everything below runs with no secrets and no network, writing only to a workspace directory
-you name.
+**Requirements:** Python 3.10 or newer. Everything below runs with no secrets and no network,
+writing only to a workspace directory you name. The offline demo has no required third-party
+packages. Ed25519 signing can use the optional `cryptography` package or the `openssl` fallback.
 
 ## Reviewer smoke (under 90 seconds)
 
@@ -147,7 +150,7 @@ pytest tests/test_grading_seam.py -q
 | Step | Needs | Why it's not in this repo |
 |------|-------|---------------------------|
 | Live agent dispatch (`runner/`) | the `claude` CLI + an account | costs money; not the point of the demo |
-| Exact historical L3 / SHAM arm assembly (`arms/`) | frozen intervention provenance | the current public 3xit2 reconstruction is pinned and tested, but is not misrepresented as byte-identical to the historical treatment |
+| Exact historical L3 / SHAM arm assembly (`arms/`) | frozen intervention provenance | the maintained public Agent Governance Lab mechanism is pinned and tested, but is not misrepresented as byte-identical to the historical treatment |
 | Grading on the *real* battery | the withheld task answer keys | publishing them would spoil the benchmark |
 
 `ledger/` and `packets/` are included so you can read the full measurement design, but

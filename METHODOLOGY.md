@@ -1,8 +1,8 @@
 # Methodology
 
-<!-- clean-docs:purpose -->
+<!-- sourcebound:purpose -->
 A condensed, plain-language version of the study design. The full preregistration, decision log, and freeze record were written before data collection and preserved privately (see [`dev-history/`](dev-history/)); those are authoritative, this file summarises them.
-<!-- clean-docs:end purpose -->
+<!-- sourcebound:end purpose -->
 
 
 ## The question, fixed before any data

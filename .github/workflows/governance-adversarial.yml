@@ -6,12 +6,12 @@ on:
     - cron: "17 5 * * 1"
 
 jobs:
-  pinned-3xit2-proof:
+  pinned-governance-proof:
     runs-on: ubuntu-latest
     steps:
       - name: Check out pinned public enforcement mechanism
         run: |
-          git clone https://github.com/owieschon/3xit2_demo.git /tmp/3xit2
-          git -C /tmp/3xit2 checkout 218d2dab8ebfa9c6e7a19f065e4a104b94d272d3
+          git clone https://github.com/owieschon/agent-governance-lab.git /tmp/agent-governance-lab
+          git -C /tmp/agent-governance-lab checkout 218d2dab8ebfa9c6e7a19f065e4a104b94d272d3
       - name: Run full adversarial mechanism suite without stamping source
-        run: RAILS_NO_STAMP=1 bash /tmp/3xit2/rails/adversarial/run_eval.sh
+        run: RAILS_NO_STAMP=1 bash /tmp/agent-governance-lab/rails/adversarial/run_eval.sh
