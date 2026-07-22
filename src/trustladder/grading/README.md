@@ -1,8 +1,8 @@
 # grading/ — two-stage grading harness (deliverable 9)
 
-<!-- clean-docs:purpose -->
+<!-- sourcebound:purpose -->
 Authority: PREREGISTRATION_v3_trustladder.md Sec. 6 (G1–G5, training-recall detection), Sec. 7 (M1 threshold), Sec. 9 (AP7) · ARCHITECTURE.md Secs. 5–6. Python 3, stdlib only, deterministic, no network. Demonstrated-red receipts: `harness/receipts/grading_red_0*.txt`.
-<!-- clean-docs:end purpose -->
+<!-- sourcebound:end purpose -->
 
 
 ## Two stages, structurally separated (G1)
@@ -23,7 +23,7 @@ transcript-shaped strings, and unknown top-level keys. `grade_defects.py`
 applies `battery/keys/<id>/key_tests.py` to the terminal tree only;
 `severity_rubric.py` encodes the G4 table (SEV1–SEV4) and the M1 threshold
 (counts severity >= SEV2). `terminal_tree_path` may be the terminal repo or
-a worktree root (`repo/` + `TASK.md`): the repo is graded, the whole tree
+a worktree root (`repo/` plus an external task brief): the repo is graded, the whole tree
 recall-scanned.
 
 ## G2 calibration gate

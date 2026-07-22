@@ -1,13 +1,13 @@
 # Glossary
 
-<!-- clean-docs:purpose -->
+<!-- sourcebound:purpose -->
 Plain definitions for the terms used across this repo. (The original study used more shorthand; this is the outsider-facing version.)
-<!-- clean-docs:end purpose -->
+<!-- sourcebound:end purpose -->
 
 
 ## The arms (the "ladder")
 - **L0** — bare agent: the task and nothing else.
-- **L1** — instructed agent: the task plus written rules (a `CLAUDE.md`), with **no**
+- **L1** — instructed agent: the task plus written repository rules, with **no**
   enforcement.
 - **SHAM** — placebo: the governance machinery is present and visible, but the gate never
   actually blocks. Controls for the "being watched" effect.

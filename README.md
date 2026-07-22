@@ -1,17 +1,21 @@
 # Agent Governance Lab — archived study
 
-<!-- clean-docs:purpose -->
-**Does a real enforcement gate make an AI coding agent safer than written rules—or does merely looking governed change behavior?**
-<!-- clean-docs:end purpose -->
+<!-- sourcebound:purpose -->
+Agent Governance Lab Study Archive is an executable measurement harness for a stopped
+experiment comparing written instructions, visible nonblocking governance, and enforced
+release gates. Use it to inspect the refusal path and synthetic pipeline; it contains no
+admissible empirical treatment result.
+<!-- sourcebound:end purpose -->
 
 > Archived and superseded by [Agent Governance Lab](https://github.com/owieschon/agent-governance-lab). Preserved because the invalidated Stage 1 result and refusal evidence remain useful.
-<!-- clean-docs:allow doc-length reason="The Agent Governance Lab reader path stays in one file because splitting it would separate its operating context from its verification material" -->
+<!-- sourcebound:allow doc-length reason="The Agent Governance Lab reader path stays in one file because splitting it would separate its operating context from its verification material" -->
 
 
-This lab combines a deterministic enforcement treatment with the preregistered experiment
-designed to measure it. Its central outcome is not a flattering effect size. Stage 1 stopped
-without a confirmatory verdict because the apparatus had validated components in isolation
-but had never run one real record through the full record → grade → analysis seam.
+**Does a real enforcement gate make an AI coding agent safer than written rules, or does
+merely looking governed change behavior?** The experiment was designed to answer that
+question. Stage 1 stopped without a confirmatory verdict because the apparatus had validated
+components in isolation but had never run one real record through the full record → grade →
+analysis seam.
 
 That refusal is the point: governance mechanisms should be measured, and the measurement
 system should decline to manufacture a conclusion when its validity seam breaks.
@@ -52,8 +56,9 @@ same failure list. Only `released` differs. That makes the treatment contrast in
 instead of prompt-defined.
 
 The maintained enforcement product is [Agent Governance Lab](https://github.com/owieschon/agent-governance-lab).
-Rather than vendor and drift it, scheduled extended CI checks out pinned commit
-`218d2dab8ebfa9c6e7a19f065e4a104b94d272d3` and runs its complete adversarial suite.
+When this repository is unarchived, its extended workflow can check out pinned commit
+`218d2dab8ebfa9c6e7a19f065e4a104b94d272d3` and run the complete adversarial suite.
+GitHub disables scheduled and manual workflow runs while the repository is archived.
 That exact commit was also re-run locally on 2026-07-10 in non-stamping CI mode: all 50
 registered cases passed, including vacuous proof, stale green, oracle tampering, manifest
 freeze, diff grounding, and untracked-content freshness.
@@ -87,8 +92,9 @@ result from the historical runs.
   adjudication packets, validity gates, and structurally ordered confirmatory analysis.
 - **Synthetic end-to-end run:** 32 stub-agent runs are signed, graded, chain-verified, and
   aggregated from actual verdicts—not hard-coded result rows.
-- **Extended mechanism proof:** the full pinned 3xit2 adversarial suite runs on a schedule
-  and by manual dispatch.
+- **Extended mechanism proof:** the workflow can run the full pinned Agent Governance Lab
+  adversarial suite by schedule or manual dispatch while this repository is unarchived. GitHub
+  disables both paths while the archive is read-only.
 
 ```bash
 pytest -q                                      # fast local suite
@@ -118,7 +124,7 @@ The broader design is in [`METHODOLOGY.md`](METHODOLOGY.md) and
   how real agents respond.
 - The real task battery, raw transcripts, private preregistration, and session identifiers
   are excluded. No private code, customer data, PII, or secrets are required.
-- The full 3xit2 mechanism is a separate public prototype with a cooperative-agent threat
+- The full Agent Governance Lab mechanism is a separate public prototype with a cooperative-agent threat
   model, not a security sandbox. This lab pins and tests it; it does not widen that claim.
 
 See [`docs/SOURCE_PROVENANCE.md`](docs/SOURCE_PROVENANCE.md) for the exact source and

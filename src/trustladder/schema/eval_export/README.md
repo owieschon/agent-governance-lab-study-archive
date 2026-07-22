@@ -1,8 +1,8 @@
 # Inspect-compatible .eval export — TrustLadder Stage 1 (Amendment J)
 
-<!-- clean-docs:purpose -->
+<!-- sourcebound:purpose -->
 Authority: PREREGISTRATION_v3_trustladder.md Sec. 5 "TOOLING INTEROP" (Amendment J, adopted) + DISPATCH deliverable 8 + ARCHITECTURE.md Secs. 1–2.
-<!-- clean-docs:end purpose -->
+<!-- sourcebound:end purpose -->
 
 
 ## Standing rules (BINDING)

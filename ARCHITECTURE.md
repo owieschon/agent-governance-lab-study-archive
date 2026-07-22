@@ -1,9 +1,12 @@
 # Architecture
 
-<!-- clean-docs:purpose -->
-TrustLadder is split into a **live layer** that produces evidence and a **measurement layer** that consumes it. They are connected by exactly one thing: a frozen JSON contract for the run-record. There is almost no shared code across the boundary — each stage reads files the previous stage wrote. This repository contains the measurement layer.
-<!-- clean-docs:end purpose -->
-<!-- clean-docs:allow doc-length reason="The Architecture reader path stays in one file because splitting it would separate its operating context from its verification material" -->
+<!-- sourcebound:purpose -->
+TrustLadder separates the excluded live runner from the measurement layer shipped here. A
+frozen JSON run-record is their only contract. This archive also contains a small treatment
+model and synthetic fixtures that exercise the measurement path without claiming to recreate
+the live experiment.
+<!-- sourcebound:end purpose -->
+<!-- sourcebound:allow doc-length reason="The Architecture reader path stays in one file because splitting it would separate its operating context from its verification material" -->
 
 
 ```

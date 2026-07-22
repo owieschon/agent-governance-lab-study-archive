@@ -1,8 +1,8 @@
 # Representative reading path
 
-<!-- clean-docs:purpose -->
+<!-- sourcebound:purpose -->
 Read these four files in order. They span the mechanism, experimental treatment, validity fence, and decisive negative case.
-<!-- clean-docs:end purpose -->
+<!-- sourcebound:end purpose -->
 
 
 1. **`src/trustladder/governance/gate.py`** — one typed treatment function. SHAM and L3
@@ -16,6 +16,7 @@ Read these four files in order. They span the mechanism, experimental treatment,
    including calibration and signature preservation. This is the seam that the study had
    failed to exercise before freezing.
 
-The maintained enforcement product is the separate public `agent-governance-lab` repository. This
-repo's scheduled extended workflow checks out a pinned commit and runs its full adversarial
-suite rather than copying or silently drifting the mechanism.
+The maintained enforcement product is the separate public `agent-governance-lab` repository.
+When this repository is unarchived, its extended workflow can check out a pinned commit and
+run the full adversarial suite rather than copying or silently drifting the mechanism. GitHub
+disables that workflow while the repository is archived.
